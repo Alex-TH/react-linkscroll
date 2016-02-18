@@ -30,4 +30,17 @@ node_modules
 .npm
 
 # Optional REPL history
-.node_repl_history
+.node_repl_historya
+
+# swap
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+
+# session
+Session.vim
+
+# temporary
+.netrwhist
+*~
+.DS_STORE
+
