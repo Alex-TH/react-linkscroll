@@ -2,12 +2,10 @@
   "name": "react-linkscroll",
   "description": "Creates a Link to another element by id with smooth transition",
   "author": "Alex-TH",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "main": "dist/linkscroll.js",
-  
-
   "scripts": {
-    "prepublish":"mkdir -p dist && browserify -t [ babelify --presets [ react ] ] src/LinkScroll.jsx -o dist/linkscroll.js",
+    "prepublish": "mkdir -p react dist && babel --presets react src/LinkScroll.jsx -u -o dist/linkscroll.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -19,17 +17,16 @@
     "scroll",
     "text"
   ],
-  
   "repository": {
     "type": "git",
     "url": "https://github.com/Alex-TH/react-linkscroll.git"
   },
-
   "bugs": "https://github.com/Alex-TH/react-linkscroll/issues",
   "devDependencies": {
     "babel-eslint": "^3.1.20",
     "eslint": "^0.24.0",
     "eslint-plugin-babel": "^1.0.0",
-    "eslint-plugin-react": "^2.6.4"
+    "eslint-plugin-react": "^2.6.4",
+    "babel-preset-react": "6.5.0"
   }
 }

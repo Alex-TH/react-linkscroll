@@ -4,7 +4,6 @@ var scrollTo = function(to, duration) {
   var diff = to - document.body.scrollTop;
   var steps = duration/10;
   var scrollStep = diff/steps;
-  var start = document.scrollingElement.scrollTop;
   var scrollInterval = setInterval(function() {
     if(steps-- > 0) {
       document.body.scrollTop += scrollStep;     
