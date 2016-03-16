@@ -23,7 +23,7 @@ Then a simple use would look like this:
 <div id="before_destination">We are so close to the destination</div>  
 <div id="to">This is the destination!!!</div>  
 ```
-##Props
+##Properties
   + ```href``` The id for the destination element.  
   + ```duration``` The duration of the transition.  
 
